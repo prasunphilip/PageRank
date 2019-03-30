@@ -25,7 +25,7 @@ int main()
 		cout<<"PageRank of "<<i<<" is : "<<r[i]<<endl;    //display first iteration
 		
 	cout<<"\n";
-	for(m=0;m<t;m++)
+	for(m=0;m<t-1;m++)
 	{
 		cout<<"Iteration "<<m+1<<":"<<endl;
 		for(i=0;i<n;i++)
