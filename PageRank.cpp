@@ -6,7 +6,7 @@ int main()
 	int i,j,k;
 	cout<<"Enter the number of pages : ";
 	cin>>n;
-	cout<<"Enter the links between the pages (1 for link and 0 for no link): "<<endl;
+	cout<<"Enter the links between the pages (1 for link and 0 for no link): "<<endl;   //in form of matrix
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
@@ -22,7 +22,7 @@ int main()
 	cout<<"\n";
 	cout<<"Iteration 0 :"<<endl;
 	for(i=0;i<n;i++)
-		cout<<"PageRank of "<<i<<" is : "<<r[i]<<endl;
+		cout<<"PageRank of "<<i<<" is : "<<r[i]<<endl;    //display foirst iteration
 		
 	cout<<"\n";
 	for(m=0;m<t;m++)
@@ -42,7 +42,7 @@ int main()
 					for(k=0;k<n;k++)
 					{
 						if(p[j][k] == 1)
-							c++;
+							c++;   //calculate outbound links
 					}
 					if(c == 0)
 						continue;
@@ -50,7 +50,7 @@ int main()
 					c = 0;
 				}	
 			}
-			r[i] = (1 - d) + d * (l);
+			r[i] = (1 - d) + d * (l);//new page rank value
 			l = 0;
 			cout<<"PageRank of "<<i<<" is : "<<r[i]<<endl;
 		}
