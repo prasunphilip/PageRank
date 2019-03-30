@@ -22,7 +22,7 @@ int main()
 	cout<<"\n";
 	cout<<"Iteration 0 :"<<endl;
 	for(i=0;i<n;i++)
-		cout<<"PageRank of "<<i<<" is : "<<r[i]<<endl;    //display foirst iteration
+		cout<<"PageRank of "<<i<<" is : "<<r[i]<<endl;    //display first iteration
 		
 	cout<<"\n";
 	for(m=0;m<t;m++)
